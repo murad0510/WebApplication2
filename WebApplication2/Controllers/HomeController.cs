@@ -23,6 +23,8 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        public int Deyer { get; set; }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
