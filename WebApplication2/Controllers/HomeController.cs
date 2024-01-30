@@ -23,6 +23,17 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        public int MyProperty { get; set; }
+
+        private int myVar;
+
+        public int fyfhr
+        {
+            get { return myVar; }
+            set { myVar = value; }
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
